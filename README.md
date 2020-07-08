@@ -36,12 +36,6 @@
 
 - <p style="color: red;">ReactJS Starter w/ TS, EditorConfig, ESLint and Prettier</p>
 
-### Requirements
-
-- [Plugin ESLint for VSCode](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-- [Plugin EditorConfig for VSCode](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
-
-
 ## 🚀 Technologies
 
 Technologies that I used to develop this web client
@@ -55,6 +49,11 @@ Technologies that I used to develop this web client
 ## 💻 Getting started
 
 ### Requirements
+
+**VSCode Plugins**
+
+- [Plugin ESLint for VSCode](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [Plugin EditorConfig for VSCode](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
 
 **Clone the project and access the folder**
 
