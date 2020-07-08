@@ -36,8 +36,10 @@
 
 - <p style="color: red;">ReactJS Starter w/ TS, EditorConfig, ESLint and Prettier</p>
 
-[Plugin ESLint for VSCode](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-[Plugin EditorConfig for VSCode](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
+### Requirements
+
+- [Plugin ESLint for VSCode](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [Plugin EditorConfig for VSCode](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
 
 
 ## 🚀 Technologies
