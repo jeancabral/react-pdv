@@ -6,7 +6,7 @@ import {
 
 import * as s from './styled';
 
-const MenuBar = () => (
+const MenuBar: React.FC = () => (
   <s.MenuBarWrapper>
     <s.MenuBarGroup>
       <s.MenuBarLink to="/" title="Home">
