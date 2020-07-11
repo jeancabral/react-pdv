@@ -6,7 +6,7 @@
   React PDV/POS
 </h3>
 
-<p align="center">POS (Point of Sale System) system made with ReactJS</p>
+<p align="center">POS (Point of Sale System) built with ReactJS</p>
 
 <p align="center">
   <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/jeancabral/react-pdv">
@@ -34,7 +34,7 @@
 
 ## 👨🏻‍💻 About the project
 
-- <p style="color: red;">POS (Point of Sale System) system made with ReactJS</p>
+- <p style="color: red;">POS (Point of Sale System) built with ReactJS</p>
 
 ## 🚀 Technologies
 
