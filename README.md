@@ -36,7 +36,7 @@
 
 - <p style="color: red;">POS (Point of Sale System) built with ReactJS</p>
 
-- [Demo @ netlify](https://app.netlify.com/sites/react-pos/deploys/5f09b812dcb30ff8f6dbbf7e)
+- [Demo @ netlify](https://5f09b812dcb30ff8f6dbbf7e--react-pos.netlify.app/)
 - [Template @ Figma](https://www.figma.com/file/hjFds4JruLo2SWobQbb2Ss/React-PDV-Frontend?node-id=24%3A2)
 
 <h1 align="center">
