@@ -49,8 +49,7 @@ export const CardContainer = styled.section`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 0 40px;
+  padding: 0 22px;
 `;
 
 export const Card = styled.div`
@@ -58,6 +57,7 @@ export const Card = styled.div`
   box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   width: 100%;
+  margin: 18px;
   max-width: 244px;
   height: 126px;
   padding: 18px;
