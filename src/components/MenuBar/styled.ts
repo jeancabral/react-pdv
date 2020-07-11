@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const MenuBarWrapper = styled.aside`
@@ -8,11 +8,18 @@ export const MenuBarWrapper = styled.aside`
   display: flex;
   flex-direction: column;
   height: 100vh;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 0.8rem 0;
   position: fixed;
+
   left: 0;
-  width: 5.75rem;
+  width: 120px;
+`;
+
+export const MenuBarLogo = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin: 44px 0 127px;
 `;
 
 export const MenuBarGroup = styled.div`

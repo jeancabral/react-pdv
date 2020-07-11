@@ -12,5 +12,5 @@ export const SidebarWrapper = styled.aside`
   padding: 2rem;
   text-align: center;
   right: 0;
-  width: 30rem;
+  width: 400px;
 `;

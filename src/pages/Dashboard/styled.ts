@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
 export const Header = styled.div`
-  margin-bottom: 2rem;
+  margin-bottom: 28px;
   padding: 2rem 1rem 0;
 `;
 
 export const Title = styled.h1`
-  color: #292C48;
+  color: #292c48;
   font-size: 48px;
   font-weight: 500;
   padding: 0px 1.4rem;
@@ -19,12 +19,12 @@ export const Search = styled.div`
   max-width: 100%;
   -webkit-box-align: center;
   align-items: center;
-  align-content: stretch;
+  /* align-content: stretch; */
   min-width: 0px;
   min-height: 0px;
   height: 50px;
   flex-direction: row;
-  margin: 2rem;
+  margin: 40px;
   padding-left: 24px;
   padding-right: 24px;
   border-width: 2px;
@@ -50,17 +50,21 @@ export const CardContainer = styled.section`
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding: 0 40px;
 `;
 
 export const Card = styled.div`
   background: #ffffff;
   box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
-  border-radius: 30px;
+  border-radius: 10px;
   width: 100%;
-  max-width: 320px;
-  margin: 15px auto;
-  padding: 22px 32px;
+  max-width: 244px;
+  height: 126px;
+  padding: 18px;
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+
 
   header {
     display: flex;
@@ -69,16 +73,31 @@ export const Card = styled.div`
     p {
       font-style: normal;
       font-weight: 600;
-      font-size: 16px;
+      font-size: 14px;
       line-height: 19px;
       letter-spacing: -0.274286px;
       color: #8e99af;
     }
   }
-  h1 {
-    margin-top: 14px;
-    font-size: 36px;
-    font-weight: normal;
-    line-height: 54px;
+
+  section {
+    p {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 19px;
+      letter-spacing: -0.274286px;
+      color: #8e99af;
+    }
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+
+    h1 {
+      margin-top: 14px;
+      font-size: 36px;
+      font-weight: 100;
+      line-height: 54px;
+    }
   }
 `;

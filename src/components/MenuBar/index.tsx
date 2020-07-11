@@ -4,10 +4,15 @@ import {
   FiUser, FiSliders, FiBox, FiMonitor, FiInfo,
 } from 'react-icons/fi';
 
+import LogoImg from '../../assets/logo.png';
+
 import * as s from './styled';
 
 const MenuBar: React.FC = () => (
   <s.MenuBarWrapper>
+    <s.MenuBarLogo>
+      <img src={LogoImg} alt="Logo" />
+    </s.MenuBarLogo>
     <s.MenuBarGroup>
       <s.MenuBarLink to="/" title="Home">
         <s.MenuBarItem>
@@ -19,8 +24,6 @@ const MenuBar: React.FC = () => (
           <FiBox size="1.6em" />
         </s.MenuBarItem>
       </s.MenuBarLink>
-    </s.MenuBarGroup>
-    <s.MenuBarGroup>
       <s.MenuBarItem title="Perfil">
         <FiUser size="1.6em" />
       </s.MenuBarItem>

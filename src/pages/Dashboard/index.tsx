@@ -15,27 +15,36 @@ const Dashboard: React.FC = () => (
       <s.Card>
         <header>
           <p>Dinheiro</p>
-          <FiDollarSign size="2em" color="green" />
+          <FiDollarSign size="24px" color="green" />
         </header>
-        <h1>R$ 0,00</h1>
+        <section>
+          <p>R$</p>
+          <h1>0,00</h1>
+        </section>
       </s.Card>
       <s.Card>
         <header>
           <p>Cartão</p>
-          <FiCreditCard size="2em" color="orange" />
+          <FiCreditCard size="24px" color="orange" />
         </header>
-        <h1>R$ 0,00</h1>
+        <section>
+          <p>R$</p>
+          <h1>0,00</h1>
+        </section>
       </s.Card>
       <s.Card>
         <header>
           <p>Total Geral</p>
-          <FiHardDrive size="2em" color="grey" />
+          <FiHardDrive size="24px" color="grey" />
         </header>
-        <h1>R$ 0,00</h1>
+        <section>
+          <p>R$</p>
+          <h1>0,00</h1>
+        </section>
       </s.Card>
     </s.CardContainer>
     <s.Search>
-      <FiSearch size="2em" color="grey" />
+      <FiSearch size="24px" color="grey" />
       <s.SearchInput />
     </s.Search>
   </Layout>
