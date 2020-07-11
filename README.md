@@ -1,5 +1,5 @@
 <h1 align="center">
-	<img alt="Logo" src=".github/logo.png" width="200px" />
+	<img alt="Logo" width="56px" src=".github/logo.png" width="200px" />
 </h1>
 
 <h3 align="center">
@@ -34,7 +34,7 @@
 
 ## 👨🏻‍💻 About the project
 
-- <p style="color: red;">ReactJS Starter w/ TS, EditorConfig, ESLint and Prettier</p>
+- <p style="color: red;">Sistema PDV (Sistema de ponto de venda) feito com ReactJS</p>
 
 ## 🚀 Technologies
 
