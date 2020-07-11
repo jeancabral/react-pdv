@@ -34,7 +34,7 @@ const Dashboard: React.FC = () => (
       </s.Card>
       <s.Card>
         <header>
-          <p>Total Geral</p>
+          <p>Caixa</p>
           <FiHardDrive size="24px" color="grey" />
         </header>
         <section>

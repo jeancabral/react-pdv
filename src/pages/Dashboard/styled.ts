@@ -72,11 +72,11 @@ export const Card = styled.div`
     justify-content: space-between;
     p {
       font-style: normal;
-      font-weight: 600;
+      font-weight: 400;
       font-size: 14px;
       line-height: 19px;
       letter-spacing: -0.274286px;
-      color: #8e99af;
+      color: #292C48;
     }
   }
 
@@ -87,7 +87,7 @@ export const Card = styled.div`
       font-size: 14px;
       line-height: 19px;
       letter-spacing: -0.274286px;
-      color: #8e99af;
+      color: #000;
     }
     display: flex;
     align-items: baseline;
