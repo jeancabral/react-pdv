@@ -6,12 +6,11 @@ export const Header = styled.div`
 `;
 
 export const Title = styled.h1`
-  color: #5843be;
-  font-size: 2.8rem;
-  font-weight: 700;
+  color: #292C48;
+  font-size: 48px;
+  font-weight: 500;
   padding: 0px 1.4rem;
   margin: 1rem auto;
-
 `;
 
 export const Search = styled.div`
@@ -51,7 +50,6 @@ export const CardContainer = styled.section`
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-
 `;
 
 export const Card = styled.div`
@@ -63,7 +61,6 @@ export const Card = styled.div`
   margin: 15px auto;
   padding: 22px 32px;
   border-radius: 5px;
-
 
   header {
     display: flex;
