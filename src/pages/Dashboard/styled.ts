@@ -101,10 +101,12 @@ export const Card = styled.div`
   }
 `;
 
-export const CategoryContainer = styled.section`
+export const CategoryContainer = styled.div`
    position: relative;
-  max-width: 800px;
-  margin: auto;
+   min-width: 90%;
+
+height: 200px;
+  margin: auto 40px;
 `;
 
 export const CategoryItem = styled.div`
@@ -112,7 +114,7 @@ export const CategoryItem = styled.div`
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   width: 100%;
-  margin: 28px 22px;
+  margin: 25px auto;
   max-width: 116px;
   height: 144px;
   padding: 18px;
