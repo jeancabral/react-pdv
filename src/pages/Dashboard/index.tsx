@@ -64,7 +64,7 @@ const Dashboard: React.FC = () => (
     <s.CategoryContainer>
       <CarouselProvider
         naturalSlideWidth={116}
-        naturalSlideHeight={144}
+        naturalSlideHeight={160}
         totalSlides={6}
         visibleSlides={5}
         infinite

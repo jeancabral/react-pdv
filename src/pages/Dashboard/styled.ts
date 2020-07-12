@@ -103,10 +103,10 @@ export const Card = styled.div`
 
 export const CategoryContainer = styled.div`
    position: relative;
-   min-width: 90%;
+
 
 height: 200px;
-  margin: auto 40px;
+  margin: auto 60px;
 `;
 
 export const CategoryItem = styled.div`
@@ -121,6 +121,7 @@ export const CategoryItem = styled.div`
   border-radius: 5px;
   display: flex;
   flex-direction: column;
+  transition: 0.3s;
 
 
   header {
@@ -132,9 +133,16 @@ export const CategoryItem = styled.div`
       font-style: normal;
       font-weight: 400;
       font-size: 14px;
+      margin-top: 10px;
       line-height: 19px;
       letter-spacing: -0.274286px;
       color: #292C48;
     }
   }
+
+  &:hover {
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+  transform: scale(1.2);
+}
+
 `;
