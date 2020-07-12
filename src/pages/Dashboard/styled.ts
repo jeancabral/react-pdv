@@ -19,12 +19,11 @@ export const Search = styled.div`
   max-width: 100%;
   -webkit-box-align: center;
   align-items: center;
-  /* align-content: stretch; */
   min-width: 0px;
   min-height: 0px;
   height: 50px;
   flex-direction: row;
-  margin: 40px;
+  margin: 20px 40px 0 40px;
   padding-left: 24px;
   padding-right: 24px;
   border-width: 2px;
@@ -98,6 +97,42 @@ export const Card = styled.div`
       font-size: 36px;
       font-weight: 100;
       line-height: 54px;
+    }
+  }
+`;
+
+export const CategoryContainer = styled.section`
+   position: relative;
+  max-width: 800px;
+  margin: auto;
+`;
+
+export const CategoryItem = styled.div`
+  background: #ffffff;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 100%;
+  margin: 28px 22px;
+  max-width: 116px;
+  height: 144px;
+  padding: 18px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+
+
+  header {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    p {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 19px;
+      letter-spacing: -0.274286px;
+      color: #292C48;
     }
   }
 `;
