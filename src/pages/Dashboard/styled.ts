@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import media from 'styled-media-query';
 
 export const Header = styled.div`
   margin-bottom: 28px;
@@ -11,6 +12,10 @@ export const Title = styled.h1`
   font-weight: 500;
   padding: 0px 1.4rem;
   margin: 1rem auto;
+
+  ${media.lessThan('large')`
+  padding: 0px 1.4rem;
+  `}
 `;
 
 export const Search = styled.div`
@@ -64,7 +69,6 @@ export const Card = styled.div`
   display: flex;
   flex-direction: column;
 
-
   header {
     display: flex;
     align-items: center;
@@ -75,7 +79,7 @@ export const Card = styled.div`
       font-size: 14px;
       line-height: 19px;
       letter-spacing: -0.274286px;
-      color: #292C48;
+      color: #292c48;
     }
   }
 
@@ -102,10 +106,9 @@ export const Card = styled.div`
 `;
 
 export const CategoryContainer = styled.div`
-   position: relative;
+  position: relative;
 
-
-height: 200px;
+  height: 200px;
   margin: auto 60px;
 `;
 
@@ -123,7 +126,6 @@ export const CategoryItem = styled.div`
   flex-direction: column;
   transition: 0.3s;
 
-
   header {
     display: flex;
     align-items: center;
@@ -136,13 +138,12 @@ export const CategoryItem = styled.div`
       margin-top: 10px;
       line-height: 19px;
       letter-spacing: -0.274286px;
-      color: #292C48;
+      color: #292c48;
     }
   }
 
   &:hover {
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
-  transform: scale(1.2);
-}
-
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+    transform: scale(1.2);
+  }
 `;
