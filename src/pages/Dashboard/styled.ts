@@ -1,21 +1,39 @@
 import styled from 'styled-components';
-import media from 'styled-media-query';
 
 export const Header = styled.div`
   margin-bottom: 28px;
-  padding: 2rem 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 `;
 
 export const Title = styled.h1`
-  color: #292c48;
-  font-size: 48px;
   font-weight: 500;
-  padding: 0px 1.4rem;
-  margin: 1rem auto;
+  font-size: 48px;
+  color: #292c48;
+`;
 
-  ${media.lessThan('large')`
-  padding: 0px 1.4rem;
-  `}
+export const Info = styled.div`
+  font-size: 18px;
+  text-align: right;
+
+
+  > span {
+    display: block;
+    line-height: 1.3;
+
+    & + span {
+      margin-top: 5px;
+    }
+  }
+
+  > .cashier {
+    color: #10b047;
+  }
+
+  > .date {
+    color: #292c48;
+  }
 `;
 
 export const Search = styled.div`
@@ -28,7 +46,7 @@ export const Search = styled.div`
   min-height: 0px;
   height: 50px;
   flex-direction: row;
-  margin: 20px 40px 0 40px;
+  margin: 40px 0;
   padding-left: 24px;
   padding-right: 24px;
   border-width: 2px;
@@ -47,13 +65,17 @@ export const SearchInput = styled.input`
   padding: 0 1rem;
   outline: none;
   -webkit-font-smoothing: antialiased;
+
+  &::placeholder{
+    color: #DADADA;
+  }
+  
 `;
 
 export const CardContainer = styled.section`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 22px;
 `;
 
 export const Card = styled.div`
@@ -61,13 +83,16 @@ export const Card = styled.div`
   box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   width: 100%;
-  margin: 18px;
-  max-width: 244px;
+  flex: 1%;
   height: 126px;
   padding: 18px;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
+
+  & + div {
+    margin-left: 18px;
+  }
 
   header {
     display: flex;
@@ -75,11 +100,11 @@ export const Card = styled.div`
     justify-content: space-between;
     p {
       font-style: normal;
-      font-weight: 400;
+      font-weight: 600;
       font-size: 14px;
       line-height: 19px;
       letter-spacing: -0.274286px;
-      color: #292c48;
+      color: #8e99af;
     }
   }
 
@@ -90,7 +115,7 @@ export const Card = styled.div`
       font-size: 14px;
       line-height: 19px;
       letter-spacing: -0.274286px;
-      color: #000;
+      color: #8e99af;
     }
     display: flex;
     align-items: baseline;
@@ -102,48 +127,5 @@ export const Card = styled.div`
       font-weight: 100;
       line-height: 54px;
     }
-  }
-`;
-
-export const CategoryContainer = styled.div`
-  position: relative;
-
-  height: 200px;
-  margin: auto 60px;
-`;
-
-export const CategoryItem = styled.div`
-  background: #ffffff;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  width: 100%;
-  margin: 25px auto;
-  max-width: 116px;
-  height: 144px;
-  padding: 18px;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  transition: 0.3s;
-
-  header {
-    display: flex;
-    align-items: center;
-    flex-direction: column-reverse;
-    justify-content: space-between;
-    p {
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-      margin-top: 10px;
-      line-height: 19px;
-      letter-spacing: -0.274286px;
-      color: #292c48;
-    }
-  }
-
-  &:hover {
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
-    transform: scale(1.2);
   }
 `;
