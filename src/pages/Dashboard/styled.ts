@@ -2,15 +2,38 @@ import styled from 'styled-components';
 
 export const Header = styled.div`
   margin-bottom: 28px;
-  padding: 2rem 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 `;
 
 export const Title = styled.h1`
-  color: #292c48;
-  font-size: 48px;
   font-weight: 500;
-  padding: 0px 1.4rem;
-  margin: 1rem auto;
+  font-size: 48px;
+  color: #292c48;
+`;
+
+export const Info = styled.div`
+  font-size: 18px;
+  text-align: right;
+
+
+  > span {
+    display: block;
+    line-height: 1.3;
+
+    & + span {
+      margin-top: 5px;
+    }
+  }
+
+  > .cashier {
+    color: #10b047;
+  }
+
+  > .date {
+    color: #292c48;
+  }
 `;
 
 export const Search = styled.div`
@@ -19,12 +42,11 @@ export const Search = styled.div`
   max-width: 100%;
   -webkit-box-align: center;
   align-items: center;
-  /* align-content: stretch; */
   min-width: 0px;
   min-height: 0px;
   height: 50px;
   flex-direction: row;
-  margin: 40px;
+  margin: 40px 0;
   padding-left: 24px;
   padding-right: 24px;
   border-width: 2px;
@@ -43,13 +65,17 @@ export const SearchInput = styled.input`
   padding: 0 1rem;
   outline: none;
   -webkit-font-smoothing: antialiased;
+
+  &::placeholder{
+    color: #DADADA;
+  }
+  
 `;
 
 export const CardContainer = styled.section`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 22px;
 `;
 
 export const Card = styled.div`
@@ -57,14 +83,16 @@ export const Card = styled.div`
   box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   width: 100%;
-  margin: 18px;
-  max-width: 244px;
+  flex: 1%;
   height: 126px;
   padding: 18px;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
 
+  & + div {
+    margin-left: 18px;
+  }
 
   header {
     display: flex;

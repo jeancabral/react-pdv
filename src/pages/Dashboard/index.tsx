@@ -10,6 +10,14 @@ const Dashboard: React.FC = () => (
   <Layout>
     <s.Header>
       <s.Title>Painel</s.Title>
+      <s.Info>
+        <span className="cashier">
+          CAIXA ABERTO
+        </span>
+        <span className="date">
+          Sexta, 10 julho 2020
+        </span>
+      </s.Info>
     </s.Header>
     <s.CardContainer>
       <s.Card>
@@ -45,7 +53,7 @@ const Dashboard: React.FC = () => (
     </s.CardContainer>
     <s.Search>
       <FiSearch size="24px" color="grey" />
-      <s.SearchInput />
+      <s.SearchInput placeholder="Consultar Material" />
     </s.Search>
   </Layout>
 );
