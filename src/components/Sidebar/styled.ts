@@ -1,8 +1,8 @@
 import styled from 'styled-components';
+import media from 'styled-media-query';
 
 import { Props } from '.';
 
-// eslint-disable-next-line import/prefer-default-export
 export const SidebarWrapper = styled.aside`
   align-items: center;
   border-right: 1px solid #edf0f3;
@@ -13,21 +13,28 @@ export const SidebarWrapper = styled.aside`
   padding: 2rem;
   text-align: center;
   width: 400px;
+
+  ${media.lessThan('large')`
+  bottom: 0;
+flex-direction: row;
+height: 200px;
+padding: 0;
+position: fixed;
+width: 100%;
+justify-content: space-evenly;
+  `}
 `;
 
 export const InputWrapper = styled.div`
   display: flex;
   margin-top: 31px;
-
   div + div {
     margin-left: 8px;
     flex: 1;
   }
-
   > div:first-child {
     width: 197px;
   }
-
   label {
     font-size: 14px;
     line-height: 16px;
@@ -49,8 +56,7 @@ export const InputBox = styled.div<Props>`
   border-color: rgb(218, 218, 218);
   border-image: initial;
   border-radius: 24px;
-  padding: ${props => props.isSmall ? '0 17px' : '0 24px'};
-
+  padding: ${(props) => (props.isSmall ? '0 17px' : '0 24px')};
 `;
 
 export const Input = styled.input`
@@ -62,7 +68,6 @@ export const Input = styled.input`
   border: 0;
   outline: none;
   -webkit-font-smoothing: antialiased !important;
-
   &::placeholder {
     color: #dadada;
   }

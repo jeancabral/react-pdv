@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
+import media from 'styled-media-query';
+
 export const MenuBarWrapper = styled.aside`
   align-items: center;
   background: #f9fafb;
@@ -11,17 +13,37 @@ export const MenuBarWrapper = styled.aside`
   justify-content: flex-start;
   padding: 0.8rem 0;
   width: 120px;
+
+  ${media.lessThan('large')`
+top: 0;
+flex-direction: row;
+height: 4.75rem;
+padding: 0;
+position: fixed;
+width: 100%;
+justify-content: space-evenly;
+`}
 `;
 
 export const MenuBarLogo = styled.div`
   display: flex;
   flex-direction: column;
   margin: 44px 0 127px;
+
+  ${media.lessThan('large')`
+
+margin: 0;
+img {
+  width: 32px;
+} `}
 `;
 
 export const MenuBarGroup = styled.div`
   display: flex;
   flex-direction: column;
+  ${media.lessThan('large')`
+    flex-direction: row;
+  `}
 `;
 
 export const MenuBarLink = styled(Link)`
@@ -36,9 +58,8 @@ export const MenuBarItem = styled.span`
   padding: 1.1rem;
   position: relative;
   width: 3.85rem;
-
   &:hover {
-    color: #292C48;
+    color: #292c48;
     transition: box-shadow 0.5s;
     border-radius: 2rem;
     content: '';

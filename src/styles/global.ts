@@ -52,22 +52,15 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
   }
   body {
-    background: #16202c;
-    line-height: 1;
-    font-size: 100%;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased !important;
+    letter-spacing: -0.34px;
+    font-weight: 500;
   }
   img {
     display: block;
     width: 100%;
     height: auto;
-  }
-
-  body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased !important;
-    letter-spacing: -0.34px;
-    font-weight: 500;
   }
 `;
 

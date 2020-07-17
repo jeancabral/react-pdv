@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import media from 'styled-media-query';
 
 export const Header = styled.div`
   margin-bottom: 28px;
@@ -11,22 +12,21 @@ export const Title = styled.h1`
   font-weight: 500;
   font-size: 48px;
   color: #292c48;
+  ${media.lessThan('large')`
+  padding: 0px 1.4rem;
+  `}
 `;
 
 export const Info = styled.div`
   font-size: 18px;
   text-align: right;
-
-
   > span {
     display: block;
     line-height: 1.3;
-
     & + span {
       margin-top: 5px;
     }
   }
-
   > .cashier {
     color: #10b047;
   }
@@ -54,6 +54,11 @@ export const Search = styled.div`
   border-color: rgb(218, 218, 218);
   border-image: initial;
   border-radius: 24px;
+
+  &::placeholder{
+    color: #DADADA;
+  }
+
 `;
 
 export const SearchInput = styled.input`
@@ -65,11 +70,6 @@ export const SearchInput = styled.input`
   padding: 0 1rem;
   outline: none;
   -webkit-font-smoothing: antialiased;
-
-  &::placeholder{
-    color: #DADADA;
-  }
-  
 `;
 
 export const CardContainer = styled.section`
@@ -89,11 +89,9 @@ export const Card = styled.div`
   border-radius: 5px;
   display: flex;
   flex-direction: column;
-
   & + div {
     margin-left: 18px;
   }
-
   header {
     display: flex;
     align-items: center;
@@ -107,7 +105,6 @@ export const Card = styled.div`
       color: #8e99af;
     }
   }
-
   section {
     p {
       font-style: normal;
@@ -120,7 +117,6 @@ export const Card = styled.div`
     display: flex;
     align-items: baseline;
     justify-content: space-between;
-
     h1 {
       margin-top: 14px;
       font-size: 36px;
@@ -128,4 +124,56 @@ export const Card = styled.div`
       line-height: 54px;
     }
   }
+`;
+
+export const CategoryContainer = styled.div`
+  position: relative;
+
+  height: 200px;
+  margin: auto 20px;
+`;
+
+export const CategoryItem = styled.div`
+
+  background: #ffffff;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: auto;
+  margin: 25px;
+  max-width: 100%;
+
+  padding: 35px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s;
+
+  header {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    p {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      margin-top: 10px;
+      line-height: 19px;
+      letter-spacing: -0.274286px;
+      color: #292c48;
+    }
+  }
+
+  &:hover {
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+    transform: scale(1.2);
+  }
+
+  ${media.lessThan('large')`
+    margin: 35px 18px;
+    padding: 20px;
+    height: auto;
+  `}
+
 `;

@@ -14,7 +14,7 @@
   border-radius: 20px;
   margin: 0 -25px;
   position: absolute;
-  top: 50%;
+  top: 70%;
   left: 0;
   transform: translateY(-50%);
 }
@@ -35,7 +35,53 @@
   border-radius: 20px;
   margin: 0 -25px;
   position: absolute;
-  top: 50%;
+  top: 70%;
   right: 0;
   transform: translateY(-50%);
+}
+
+@media (max-width: 1170px) {
+  .buttonNext {
+
+    border: none;
+    color:#000;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    outline: none;
+    background: #F8F8F7;
+    border-radius: 20px;
+    margin: 0 -25px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+}
+
+@media (max-width: 1170px) {
+  .buttonBack {
+
+    border: none;
+    color:#000;
+    padding: 10x;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    outline: none;
+    background: #F8F8F7;
+    border-radius: 20px;
+    margin: 0 -25px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
 }
