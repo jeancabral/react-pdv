@@ -8,7 +8,7 @@ import {
 } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
-import './Carrousel.css';
+import '../../styles/carrousel.css';
 
 import * as s from './styled';
 import Layout from '../../components/Layout';

@@ -1,5 +1,4 @@
 .buttonBack {
-
   border: none;
   color:#000;
   padding: 10x;
@@ -20,7 +19,6 @@
 }
 
 .buttonNext {
-
   border: none;
   color:#000;
   padding: 10px;
@@ -38,4 +36,16 @@
   top: 50%;
   right: 0;
   transform: translateY(-50%);
+}
+
+@media (min-width: 1900px) {
+  .buttonNext {
+    top: 70%;
+  }
+}
+
+@media (min-width: 1900px) {
+  .buttonBack {
+    top: 70%;
+  }
 }
