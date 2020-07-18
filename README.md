@@ -36,7 +36,7 @@
 
 - <p style="color: red;">POS (Point of Sale System) built with ReactJS</p>
 
-- [Demo @ netlify](https://5f0d1cb983492087f7c2d6a7--react-pos.netlify.app)
+- [Demo @ netlify](https://5f1334983bb412d8a17342ed--react-pos.netlify.app/)
 - [Template @ Figma](https://www.figma.com/file/hjFds4JruLo2SWobQbb2Ss/React-PDV-Frontend?node-id=24%3A2)
 
 <h1 align="center">
@@ -74,6 +74,15 @@ $ yarn
 # Start the client
 $ yarn start
 ```
+
+## Contributors
+
+<a href="https://twiiter.com/jeancabral">
+<img src="https://avatars1.githubusercontent.com/u/2077886?s=460&v=4" width="75px">
+</a>
+<a href="https://github.com/pablohenriqueop">
+<img src="https://avatars2.githubusercontent.com/u/28938150?s=460&u=dda791c5809c0c180da7d999ef9b83ecd4401f17&v=4" width="75px">
+</a>
 
 ## 🤔 How to contribute
 
