@@ -1,0 +1,66 @@
+{
+  "stock": [
+    {
+      "id": 1,
+      "amount": 3
+    },
+    {
+      "id": 2,
+      "amount": 5
+    },
+    {
+      "id": 3,
+      "amount": 2
+    },
+    {
+      "id": 4,
+      "amount": 1
+    },
+    {
+      "id": 5,
+      "amount": 5
+    },
+    {
+      "id": 6,
+      "amount": 10
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "title": "Salgadinho de Milho Sabor Queijo Nacho Doritos ELMA CHIPS 55g",
+      "price": 179.9,
+      "image": "https://via.placeholder.com/64/64/"
+    },
+    {
+      "id": 2,
+      "title": "Chips De Coco Canela Copra 60g",
+      "price": 139.9,
+      "image": "https://via.placeholder.com/64/64/"
+    },
+    {
+      "id": 3,
+      "title": "Salgadinho de Milho Orgânico Integral Sabor Pizza PITZO 45g",
+      "price": 219.9,
+      "image": "https://via.placeholder.com/64/64/"
+    },
+    {
+      "id": 4,
+      "title": "Ovinhos de Amendoim YOKI Pacote 90g",
+      "price": 139.9,
+      "image": "https://via.placeholder.com/64/64/"
+    },
+    {
+      "id": 5,
+      "title": "Amendoim Sabor Pimenta Vermelha Pettiz Pacote 500g",
+      "price": 219.9,
+      "image": "https://via.placeholder.com/64/64/"
+    },
+    {
+      "id": 6,
+      "title": "Coquetel com Uva Passa, Amendoim, Castanha de Caju e Avelã Dr. OETKER Pacote 150g",
+      "price": 179.9,
+      "image": "https://via.placeholder.com/64/64/"
+    }
+  ]
+}
