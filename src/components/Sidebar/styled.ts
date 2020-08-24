@@ -72,3 +72,9 @@ export const Input = styled.input`
     color: #dadada;
   }
 `;
+
+export const Paper = styled.ul`
+  overflow: auto;
+height: 100%;
+padding: 20px 0;
+`;

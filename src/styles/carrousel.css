@@ -13,7 +13,7 @@
   border-radius: 20px;
   /* margin: 0 -25px; */
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 0;
   transform: translateY(-50%);
 }
@@ -33,19 +33,19 @@
   border-radius: 20px;
   /* margin: 0 -25px; */
   position: absolute;
-  top: 50%;
+  top: 30%;
   right: 0;
   transform: translateY(-50%);
 }
 
 @media (min-width: 1900px) {
   .buttonNext {
-    top: 70%;
+    top: 50%;
   }
 }
 
 @media (min-width: 1900px) {
   .buttonBack {
-    top: 70%;
+    top: 50%;
   }
 }

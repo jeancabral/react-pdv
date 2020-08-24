@@ -128,8 +128,8 @@ export const Card = styled.div`
 
 export const CategoryContainer = styled.div`
   position: relative;
-  height: 255px;
-  margin: auto 20px;
+  height: 295px;
+  margin: auto 10px;
   overflow: hidden;
 `;
 

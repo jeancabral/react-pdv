@@ -1,7 +1,9 @@
 /* eslint-disable import/no-unresolved */
 import React, { useEffect, useState } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+
 import {
-  FiDollarSign, FiCreditCard, FiHardDrive, FiSearch, FiChevronRight, FiChevronLeft,
+  FiDollarSign, FiCreditCard, FiHardDrive, FiSearch, FiChevronRight, FiChevronLeft, FiPlusCircle,
 } from 'react-icons/fi';
 
 import {
@@ -33,12 +35,19 @@ export interface Product {
   id: number;
   title: string;
   price: number;
+  amount: number;
   image: string;
   priceFormatted: string;
 }
 
+export interface Cart {
+  cart: Product[];
+}
+
 const Dashboard: React.FC = () => {
   const [products, setProducts] = useState<Product[]>([]);
+
+  const dispatch = useDispatch();
 
   useEffect(() => {
     async function loadProducts() {
@@ -56,6 +65,10 @@ const Dashboard: React.FC = () => {
 
     loadProducts();
   }, []);
+
+  function handleAddProduct(product: Product) {
+    dispatch({ type: 'ADD_TO_CART', payload: product });
+  }
 
   return (
     <Layout>
@@ -181,8 +194,8 @@ const Dashboard: React.FC = () => {
               <p>{product.priceFormatted}</p>
             </span>
 
-            <button type="button" onClick={() => false}>
-              <span>+</span>
+            <button type="button" onClick={() => handleAddProduct(product)}>
+              <FiPlusCircle size="24px" color="grey" />
             </button>
           </li>
         ))}
