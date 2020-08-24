@@ -11,7 +11,7 @@
   outline: none;
   background: #F8F8F7;
   border-radius: 20px;
-  margin: 0 -25px;
+  /* margin: 0 -25px; */
   position: absolute;
   top: 50%;
   left: 0;
@@ -31,7 +31,7 @@
   outline: none;
   background: #F8F8F7;
   border-radius: 20px;
-  margin: 0 -25px;
+  /* margin: 0 -25px; */
   position: absolute;
   top: 50%;
   right: 0;
