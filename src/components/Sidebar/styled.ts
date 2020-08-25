@@ -73,8 +73,29 @@ export const Input = styled.input`
   }
 `;
 
-export const Paper = styled.ul`
+export const Receipt = styled.ul`
   overflow: auto;
-height: 100%;
-padding: 20px 0;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  background: #fff9d8;
+  box-shadow: 5px 2px 24px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+`;
+
+export const Item = styled.li`
+  display: flex;
+
+  justify-content: space-between;
+  div {
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: initial;
+    display: flex;
+    margin-bottom: 20px;
+    letter-spacing: -0.34px;
+  }
 `;

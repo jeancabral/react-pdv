@@ -54,11 +54,18 @@ const Sidebar: React.FC<Props> = ({ isSmall }) => {
         </div>
       </s.InputWrapper>
       <hr />
-      <s.Paper>
+      <s.Receipt>
+        <s.Item>
+          <div>DESCRIÇÃO</div>
+          <div>QTD</div>
+        </s.Item>
         {cart.map((p) => (
-          <li>{p.title}</li>
+          <s.Item>
+            <div>{p.title}</div>
+            <span>{p.amount}</span>
+          </s.Item>
         ))}
-      </s.Paper>
+      </s.Receipt>
     </s.SidebarWrapper>
   );
 };
