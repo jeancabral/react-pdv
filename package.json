@@ -12,7 +12,7 @@
     "@types/react-dom": "^16.9.8",
     "@types/react-icons": "^3.0.0",
     "@types/react-router-dom": "^5.1.5",
-    "axios": "^0.20.0",
+    "axios": "^0.21.1",
     "immer": "^7.0.7",
     "polished": "^3.6.5",
     "pure-react-carousel": "^1.27.1",
